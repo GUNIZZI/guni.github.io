@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+html,
+body {
+    height: 100vh;
+}
+body {
+    background: linear-gradient(135deg, #7815ac 0%, #ff7129 100%);
+    overflow: hidden;
+}
+
+#app {
+    height: 100vh;
+}
