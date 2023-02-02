@@ -6,14 +6,13 @@
                 v-bind:key="$item"
                 :style="'font-size:' + (3 + parseInt(Math.random() * 2)) + 'rem'"
             >
-                <router-link
-                    :to="$item.path"
-                    v-html="replaceMbtiSpell($item.name, mbti.substr($idx, 1))"
-                ></router-link>
+                <router-link :to="$item.path">{{ replaceMbtiSpell($item.name, mbti.substring($idx, 1)) }}</router-link>
             </li>
         </ul>
     </div>
 </template>
+
+<!-- v-html="replaceMbtiSpell($item.name, mbti.substring($idx, 1))" -->
 
 <script>
 export default {

@@ -1,6 +1,8 @@
 const { defineConfig } = require("@vue/cli-service");
 
 module.exports = defineConfig({
+    publicPath: '/guni.github.io/',
+    outputDir: './docs',
     transpileDependencies: true,
     // configureWebpack: {
     //     resolve: {
